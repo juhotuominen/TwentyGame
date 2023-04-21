@@ -1,0 +1,63 @@
+body{
+    background-color: azure;
+}
+.numbers{
+    margin-left: 50px;
+    background-color: antiquewhite;
+    height: 800px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.numberbox{
+    margin: auto;
+    height: 50px;
+    width: 90px;
+    background-color: rgb(209, 248, 255);
+    text-align: center;
+
+}
+.numberbox:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.center{
+    background: orange;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    margin: 0 0 0 0px;
+
+}
+#randomnumber{
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    text-align: center;
+    vertical-align: baseline;
+    line-height: 150px;
+    font-size: 50px;
+}
+.button{
+    position: absolute;
+    left: 42%;
+    top: 70%;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.button:hover{
+    background-color: black;
+    cursor: pointer;
+}
