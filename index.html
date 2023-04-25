@@ -7,7 +7,7 @@
     <title>Twenty</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body onload="randomize()">
     <div class="numbers">
         <div class="numberbox" id="box1">1</div>
         <div class="numberbox" id="box2">2</div>
@@ -34,10 +34,8 @@
     </div>
     <div class="center">
         <div id="randomnumber" draggable="true">0</div>
-        <button class="button" id="button">Random number</button>
-        <button class="setButton" id="setButton">Set number</button>
-
         <input type="text" style="font-size: 20px;" id="location" placeholder="Numbers location">
+        <button class="setButton" id="setButton">Set number</button>
     </div>
     
     <script src="main.js"></script>

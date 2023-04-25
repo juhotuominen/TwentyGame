@@ -44,24 +44,11 @@ body{
     line-height: 150px;
     font-size: 50px;
 }
-.button{
-    position: absolute;
-    left: 32%;
-    top: 70%;
-    border-radius: 10px;
-    height: 40px;
-    width: 80px;
-    background-color: blueviolet;
-    color: aliceblue;
-}
-.button:hover{
-    background-color: rgb(53, 8, 90);
-    cursor: pointer;
-}
+
 .setButton{
     position: absolute;
-    left: 52%;
-    top: 70%;
+    left: 42%;
+    top: 82%;
     border-radius: 10px;
     height: 40px;
     width: 80px;
@@ -74,7 +61,7 @@ body{
 }
 #location{
     position: absolute;
-    top: 85%;
+    top: 70%;
     left: 31%;
     width: 170px;
 }
