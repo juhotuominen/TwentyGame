@@ -75,3 +75,13 @@ body{
     font-size: 23px;
     color: white;
 }
+.lost{
+    margin: auto;
+    height: 50px;
+    width: 90px;
+    background-color: rgb(129, 17, 17);
+    text-align: center;
+    line-height: 50px;
+    font-size: 23px;
+    color: white;
+}
