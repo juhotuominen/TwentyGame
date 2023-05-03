@@ -9,9 +9,13 @@ function setNumber() {
   var number = document.getElementById("randomnumber").innerHTML;
   var loc = document.getElementById("location").value;
   var box = document.getElementById("box" + loc);
+  var textDiv = document.getElementById("text");
+  
+
 
   if (checkArray(playedNumbers, loc)) {
     playedNumbers[loc] = number;
+    textDiv.style.display = "none";
     box.innerHTML = number;
     box.className = "set";
     if (arrayInIncreasingOrder(playedNumbers)) {
@@ -21,7 +25,8 @@ function setNumber() {
       box.className = "lost";
     }
   } else {
-    alert("Location is not valid. Please choose another.");
+    document.getElementById("text").innerHTML = "Location is not valid. Please choose another one.";
+    textDiv.style.display = "block";
     document.getElementById("location").value = "";
   
   }
@@ -51,5 +56,4 @@ function checkArray(playedNumbers, location){
       return false;
     }
   }
-  alert("Location is not in given limits!")
 }
