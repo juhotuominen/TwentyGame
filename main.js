@@ -47,7 +47,7 @@ function arrayInIncreasingOrder(arr) {
 }
 
 function checkArray(playedNumbers, location){
-  while (location < 20 && location > 0){
+  while (location < 21 && location > 0){
     if (playedNumbers[location] === undefined){
       return true;
       
