@@ -21,7 +21,7 @@ function setNumber() {
       box.className = "lost";
     }
   } else {
-    alert("Location is already taken. Please choose another.");
+    alert("Location is not valid. Please choose another.");
     document.getElementById("location").value = "";
   
   }
@@ -42,11 +42,14 @@ function arrayInIncreasingOrder(arr) {
 }
 
 function checkArray(playedNumbers, location){
-  if (playedNumbers[location] === undefined){
-    return true;
-    
+  while (location < 20 && location > 0){
+    if (playedNumbers[location] === undefined){
+      return true;
+      
+    }
+    else if(playedNumbers[location] !== undefined){
+      return false;
+    }
   }
-  else if(playedNumbers[location] !== undefined){
-    return false;
-  }
+  alert("Location is not in given limits!")
 }
